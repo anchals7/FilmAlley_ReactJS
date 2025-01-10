@@ -22,4 +22,8 @@ Future features implementation:
 
 ***above updates as of 1/9/25***
 
+The complete node_modules folder has not been uploaded so the project can't be run without it. Refer to the images attached in the repo for a view of the website. 
+
+***above updates as of 1/10/25***
+
 
