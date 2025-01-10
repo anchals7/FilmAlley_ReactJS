@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-merriweather: "Merriweather", serif;
+    --font-delius: "Delius Swash Caps", cursive;
+    --color-primary: #212426;
+}
+
+body {
+    font-family: var(--font-delius);
+    background-color: var(--color-primary);
+}
+
+.app {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 0.9px;
+    background: linear-gradient(90deg, rgba(249, 211, 180, 1) 0%, rgba(249, 211, 180, 0) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+}
+
+.search-box{
+    margin: 4rem 0 2rem;
+    width: 71%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1.75rem;
+  }
+  
+  .search-box input {
+    width: 35%;
+    height: 60px;
+    background: #f5f7fa;
+    color: #333;
+    border: none;
+    padding: 1rem 25px;
+    border-radius: 30px;
+    flex: 1;
+    font-size: 18px;
+    font-weight: 300;
+    outline: none;
+  }
+  
+
+.search-box button {
+    margin-left: -51px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background: #ffffff;
+    color: #333;
+    cursor: pointer;
+    font-size: 24px;
+    transition: all 0.3s;
+    outline: none;
+  }
+  
+  .search-box button:hover {
+    background: #e1e5ea;
+  }
+  
+  .search-box button img {
+    
+    margin-left: -29px;
+    width: auto;
+    height: 90px;
+    margin-top: -25px
+  }
+
+  .content {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 310px;
+    height: 460px;
+    margin: 1.5rem;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+  }
+
+  .card:hover {
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05, 1.05);
+  }
+
+  .card div:nth-of-type(1) {
+    position: absolute;
+    padding: 16px;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    color: #f9d3b4;
+  }
+
+  .card div:nth-of-type(3) {
+    z-index: 2;
+    background-color: #343739;
+    padding: 16px 24px 24px 24px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .card div:nth-of-type(2) {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card div:nth-of-type(2) img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card div:nth-of-type(3) span {
+    font-family: var(--font-delius);
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: #f0f0f0;
+  }
+
+  .card:hover div:nth-of-type(2) {
+    height: 100%;
+    opacity: 0.3;
+  }
+
+.card:hover div:nth-of-type(1) {
+    opacity: 1;
+}
+
+.card:hover div:nth-of-type(3){
+    background-color: transparent;
+}
+
+.card div:nth-of-type(3) h3 {
+    margin-top: 5px;
+    font-family: var(--font-merriweather);
+    color: #f9d3b4;
+}
+
+  
+
+
+
+
