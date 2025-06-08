@@ -1,0 +1,21 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: "This is the project's tech stack"
+---
+
+# Technical stack
+
+- Node.js and JavaScript for backend
+- MongoDB for database
+- Mongoose for ODM
+- RESTful API
+- Express with Node.js (if needed)
+- React.js for frontend
+- TailwindCSS for styling
+- Flask and Python for ML related services
+
+
